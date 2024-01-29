@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+# Author: Ziad Abdelalim
+# Title: Case
+# Date: 29/01/2024
+# Description: Read file line by line
+
+while IFS= read -r line
+  do
+    : do something with "$line"
+done < FILENAME?

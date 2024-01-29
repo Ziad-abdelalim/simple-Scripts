@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+# Author: Ziad Abdelalim
+# Title: Case
+# Date: 29/01/2024
+# Description: Is this a valid positive integer?
+
+case $1 in
+  *[!0-9]*)false;;
+  *)true;;
+esac
