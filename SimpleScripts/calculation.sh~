@@ -1,8 +1,0 @@
-#! /usr/bin/bash
-
-#Mathematical calculation supporting floating points 
-# bc -l for floating points
-
-echo "Enter an expression:"
-read x
-echo "$x" |bc -l | awk '{printf "%.2f\n",$x}'
