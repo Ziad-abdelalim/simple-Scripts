@@ -1,6 +1,6 @@
 # simple Scripts
-  simple bash scripts.
-  1.Array
-  2.Calculation
-  3.Case
-  4.Loop
+  Simple bash scripts.
+  1. Array
+  2. Calculation
+  3. Case
+  4. Loop
