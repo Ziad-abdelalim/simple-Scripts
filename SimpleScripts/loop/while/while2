@@ -2,9 +2,9 @@
 # Author: Ziad Abdelalim
 # Title: Case
 # Date: 29/01/2024
-# Description:
+# Description: Enter number between 20 and 30 if invalid number was entered repeat the process
 
-read -r "Enter integer num" num
+read -p "Enter integer num" num
 if [ $num -ge 20 ] && [ $num -le 30 ];
  then   
       printf "%s\n" "Valid Number"
@@ -12,7 +12,10 @@ if [ $num -ge 20 ] && [ $num -le 30 ];
  else
   while :  
    do
-     read -r "Enter Number between 20 and 30" num 
-       $(($num >= 20)) && $(($num <= 30)) && break
-   done
+     read -p "Enter Number between 20 and 30" num
+      if [ $num -ge 20 ] && [ $num -le 30 ];then
+          printf "%s\n" "Validnumber"
+          break 
+        fi 
+ done
 fi
