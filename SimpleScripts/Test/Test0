@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+#Author: Ziad Abdelalim
+# Author: Ziad Abdelalim
+# Title: Case
+# Date: 06/02/2024
+# Description: if the entered name is an existing file
+
+
+read -p "Enter A file name" name
+
+test -e $PWD/$name
+if [ $? -eq 0 ];then
+ printf "%s\n" "An existing file"
+else
+ printf "%s\n" "This file doesn't exist"
+fi
+
